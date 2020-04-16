@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">BBDDNoticias</string>
+    <string name="errFuenteNoSeleccionada">Debe seleccionar si la fuente es fiable o no.</string>
+	<string name="Url">http://10.0.2.2/Noticias/</string>
+</resources>
+

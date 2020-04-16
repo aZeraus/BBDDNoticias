@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Menu de la app -->
+<!--
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    Hay que añadir
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+    para que funcione app:showAsAction="always"
+    android:background="@color/colorPrimaryDark"
+    android:id="@+id/menu">
+                android:icon="@drawable/ic_input_get"
+                android:icon="@mipmap/ic_launcher"
+
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Items que queremos crear en la app -->
+    <!-- Item para ir a la pantalla principal -->
+    <group android:id="@+id/groupPrincipal">
+        <!-- Muestra mnuPrincipal por defecto
+         android:visible="true"-->
+        <item
+            android:id="@+id/mnuPrincipal"
+            android:icon="@drawable/noticias"
+            android:title="Pantalla Principal"
+            app:showAsAction="always|withText"/>
+    </group>
+    <!-- Item para modificar la BBDD -->
+    <group android:id="@+id/groupBBDD">
+        <item
+            android:id="@+id/mnuBBDD"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="BBDD">
+            <menu>
+                <item
+                    android:id="@+id/mnuInsertar"
+                    android:icon="@android:drawable/ic_input_add"
+                    android:title="Insertar Noticia"
+                    app:showAsAction="ifRoom|withText"/>
+                <item
+                    android:id="@+id/mnuEliminar"
+                    android:icon="@android:drawable/ic_delete"
+                    android:title="Eliminar Noticia"
+                    app:showAsAction="ifRoom|withText"/>
+            </menu>
+        </item>
+    </group>
+</menu>

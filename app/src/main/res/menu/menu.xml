@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Menu de la app -->
+<!--
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    Hay que añadir
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+    para que funcione app:showAsAction="always"
+    android:background="@color/colorPrimaryDark"
+    android:id="@+id/menu">
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Items que queremos mostrar en la App -->
+    <!-- Item para ir a la pantalla principal -->
+        <!-- Muestra mnuPrincipal por defecto
+         android:visible="true"-->
+        <item
+            android:id="@+id/mnuPrincipal"
+            android:icon="@drawable/noticias"
+            android:title="Pantalla Principal"
+            app:showAsAction="always|withText"/>
+        <!-- Item para Insertar una noticia -->
+        <item
+            android:id="@+id/mnuInsertar"
+            android:icon="@android:drawable/ic_input_add"
+            android:title="Insertar Noticia"
+            app:showAsAction="always|withText"/>
+        <!-- Item para Borrar una noticia -->
+        <item
+            android:id="@+id/mnuEliminar"
+            android:icon="@android:drawable/ic_delete"
+            android:title="Eliminar Noticia"
+            app:showAsAction="always|withText"/>
+    <!-- Items que van a aparecer en el Action OverFlow -->
+    <item
+        android:id="@+id/mnuGestion"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="Gestión de Noticias">
+        <menu>
+            <!-- Item para ir a la pantalla principal -->
+            <item
+                android:id="@+id/mnuPrincipalM"
+                android:icon="@mipmap/ic_launcher"
+                android:title="Pantalla Principal"
+                app:showAsAction="ifRoom|withText"/>
+            <!-- Item para Insertar una noticia -->
+            <item
+                android:id="@+id/mnuInsertarM"
+                android:icon="@android:drawable/ic_input_add"
+                android:title="Insertar Noticia"
+                app:showAsAction="ifRoom|withText"/>
+            <!-- Item para Borrar una noticia -->
+            <item
+                android:id="@+id/mnuEliminarM"
+                android:icon="@android:drawable/ic_delete"
+                android:title="Eliminar Noticia"
+                app:showAsAction="ifRoom|withText"/>
+        </menu>
+    </item>
+
+</menu>
