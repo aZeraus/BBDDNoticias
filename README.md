@@ -1,4 +1,5 @@
 # BBDDNoticias
+Módulo PMDM tarea 3.
 La aplicación servirá para recopilar las noticias de la prensa electrónica que le parezcan interesantes al usuario y valorarlas en función de determinados criterios.
 En este ejercicio para simplificar la base de datos, sólo tendremos una tabla NOTICIAS.
 El usuario realizará la carga de las noticias que desee.
